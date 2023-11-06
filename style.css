@@ -1,0 +1,128 @@
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+
+    --ff-regular: 'Outfit', sans-serif;
+    
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+/* RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+  /* general styles */
+
+  body {
+    font-family: var(--ff-regular);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-light-gray);
+    color: var(--clr-grayish-blue);
+    height: calc(100vh - 1px);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  /* card styles */
+
+  body {
+    font-family: var(--ff-regular);
+    font-weight: var(--fw-regular);
+    background-color: var(--clr-light-gray);
+    color: var(--clr-grayish-blue);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qr-card {
+    background-color: var(--clr-white);
+    border-radius: 1.5rem;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.1;
+    text-align: center;
+    width: 100%;
+}
+
+.qr-code-image {
+    border-radius: 1.9rem;
+    padding: 1.1rem;
+    margin-bottom: .75rem;
+}
+
+.card-title {
+    font-weight: var(--fw-bold);
+    font-size: 1.55rem;
+    text-align: center;
+    color: var(--clr-dark-blue);
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
+    padding: 0 2.5rem;
+}
+
+.card-description {
+    font-size: 1.125rem;
+    padding: 0 2.5rem;
+}
+
+@media (min-width: 375px) {
+    .qr-card {
+        width: 375px;
+        height: 575px;
+    }
+}
