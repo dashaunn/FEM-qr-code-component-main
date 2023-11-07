@@ -19,13 +19,13 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Screenshots
 
-![](./screenshots/product-preview-card-desktop-view.png)
-![](./screenshots/product-preview-card-mobile-view.png)
+![](./screenshots/QR-code-component-desktop-view.png)
+![](./screenshots/QR-code-component-mobile-view.png)
 
 ### Links
 
-- Solution URL: [solution URL]()
-- Live Site URL: [live site URL here]()
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/qr-code-component-7CHacL4yUl)
+- Live Site URL: [live site URL](https://dashaunn.github.io/FEM-qr-code-component-main/)
 
 ## My process
 
